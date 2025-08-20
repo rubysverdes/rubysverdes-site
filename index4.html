@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RubysVerdes - Paisagismo e Plantas</title>
+    <style>
+        /* CSS bonito para o site */
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5fcf7;
+            color: #2c3e50;
+        }
+        
+        header {
+            background-color: #27ae60;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            background-color: #2ecc71;
+            padding: 10px;
+            text-align: center;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        .hero {
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><rect width="100" height="100" fill="%232ecc71" opacity="0.2"/><path d="M30,30 Q50,10 70,30 T90,50 T70,70 T30,70 T10,50 T30,30" fill="%2327ae60" opacity="0.5"/></svg>');
+            background-size: cover;
+            padding: 80px 20px;
+            text-align: center;
+            color: #2c3e50;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        .services {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            margin: 40px 0;
+        }
+        
+        .service-card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        
+        .service-card h3 {
+            color: #27ae60;
+        }
+        
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin: 40px 0;
+        }
+        
+        .gallery-item {
+            width: 200px;
+            height: 150px;
+            background-color: #d5f5e3;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3rem;
+        }
+        
+        footer {
+            background-color: #27ae60;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 40px;
+        }
+        
+        .contact-btn {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 20px 0;
+            transition: background-color 0.3s;
+        }
+        
+        .contact-btn:hover {
+            background-color: #c0392b;
+        }
+        
+        @media (max-width: 768px) {
+            .services {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">RubysVerdes</div>
+        <p>Transformando ambientes com a beleza das plantas</p>
+    </header>
+    
+    <nav>
+        <a href="#sobre">Sobre</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#contato">Contato</a>
+    </nav>
+    
+    <div class="hero">
+        <h1>Seu ambiente mais verde e aconchegante</h1>
+        <p>Paisagismo, venda de plantas e ornamentação para sua casa ou empresa</p>
+        <a href="#contato" class="contact-btn">Solicitar Orçamento</a>
+    </div>
+    
+    <div class="container">
+        <section id="sobre">
+            <h2>Sobre a RubysVerdes</h2>
+            <p>Rubiana Cordeiro da Silva Rocha é a proprietária da marca RubysVerdes, especializada em transformar ambientes através do paisagismo e do poder das plantas. Com dedicação e amor pela natureza, oferecemos serviços personalizados para casas, empresas, condomínios e apartamentos.</p>
+            <p>Nossa missão é trazer mais verde, vida e bem-estar para seu dia a dia através de projetos que harmonizam a natureza com seu espaço.</p>
+        </section>
+        
+        <section id="servicos">
+            <h2>Nossos Serviços</h2>
+            <div class="services">
+                <div class="service-card">
+                    <h3>Paisagismo</h3>
+                    <p>Projetos personalizados para transformar seu espaço com plantas e elementos naturais.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Venda de Plantas</h3>
+                    <p>Variedade de plantas ornamentais, folhagens e flores para todos os ambientes.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Ornamentação</h3>
+                    <p>Decoração de ambientes com plantas para eventos, empresas e residências.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Manutenção</h3>
+                    <p>Cuidamos das suas plantas para que permaneçam sempre bonitas e saudáveis.</p>
+                </div>
+            </div>
+        </section>
+        
+        <section id="galeria">
+            <h2>Galeria de Projetos</h2>
+            <div class="gallery">
+                <div class="gallery-item">🌿</div>
+                <div class="gallery-item">🌱</div>
+                <div class="gallery-item">🍀</div>
+                <div class="gallery-item">🎍</div>
+                <div class="gallery-item">🌴</div>
+                <div class="gallery-item">💐</div>
+            </div>
+            <p style="text-align: center; margin-top: 20px;"><em>Em breve, fotos dos nossos projetos realizados!</em></p>
+        </section>
+        
+        <section id="contato">
+            <h2>Entre em Contato</h2>
+            <p>Estamos prontos para transformar seu ambiente! Entre em contato para orçamentos e mais informações.</p>
+            <p>Email: rubiana@rubysverdes.com.br</p>
+            <p>Telefone: (XX) XXXXX-XXXX</p>
+            <p>Redes sociais: @rubysverdes</p>
+            
+            <form style="max-width: 500px; margin: 30px auto;">
+                <div style="margin-bottom: 15px;">
+                    <input type="text" placeholder="Seu nome" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <input type="email" placeholder="Seu email" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc;">
+                </div>
+                <div style="margin-bottom: 15px;">
+                    <textarea placeholder="Sua mensagem" style="width: 100%; padding: 10px; border-radius: 5px; border: 1px solid #ccc; height: 100px;"></textarea>
+                </div>
+                <button type="submit" style="background-color: #27ae60; color: white; padding: 12px 25px; border: none; border-radius: 5px; cursor: pointer;">Enviar Mensagem</button>
+            </form>
+        </section>
+    </div>
+    
+    <footer>
+        <p>RubysVerdes - Rubiana Cordeiro da Silva Rocha</p>
+        <p>© 2023 - Todos os direitos reservados</p>
+        <p>rubysverdes.com.br</p>
+    </footer>
+    
+    <script>
+        // JavaScript simples para o formulário
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Obrigado pelo seu interesse! Em breve entraremos em contato.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
