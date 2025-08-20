@@ -82,7 +82,33 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', function(e) {
         e.preventDefault();
-        alert('Obrigado pela sua mensagem! Entraremos em contato em breve.');
+        
+        // Coletar dados do formulário
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const phone = document.getElementById('phone').value;
+        const message = document.getElementById('message').value;
+        
+        // Preparar mensagem para WhatsApp
+        const whatsappMessage = `Olá! Me chamo ${name}. ${message}${phone ? ` Meu telefone é: ${phone}.` : ''}${email ? ` Meu email é: ${email}.` : ''}`;
+        const encodedMessage = encodeURIComponent(whatsappMessage);
+        
+        // Preparar email
+        const emailSubject = encodeURIComponent(`Novo contato de ${name} - Site RubysVerdes`);
+        const emailBody = encodeURIComponent(`Nome: ${name}\nEmail: ${email}\nTelefone: ${phone}\nMensagem: ${message}`);
+        
+        // Abrir WhatsApp
+        window.open(`https://wa.me/5581986935525?text=${encodedMessage}`, '_blank');
+        
+        // Também abrir cliente de email (opcional)
+        setTimeout(() => {
+            window.open(`mailto:rubi.cordeiro@gmail.com?subject=${emailSubject}&body=${emailBody}`, '_blank');
+        }, 1000);
+        
+        // Feedback para o usuário
+        alert('Obrigado pela sua mensagem! Você será redirecionado para o WhatsApp para concluir o contato.');
+        
+        // Limpar formulário
         this.reset();
     });
 }
